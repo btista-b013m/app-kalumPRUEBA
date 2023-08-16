@@ -2,19 +2,28 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarreraTecnicaComponent } from './components/carrera-tecnica/carrera-tecnica.component';
 import { MaterialModule } from '../shared/material.module';
-import { FlexLayoutModule, FlexModule } from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormCarreraTecnicaComponent } from './components/carrera-tecnica/form-carrera-tecnica.component';
+//import { AspiranteModule } from '../aspirante/aspirante.module';
+//import { AlumnoModule } from '../alumno/alumno.module';
 
 
 
 @NgModule({
   declarations: [
-    CarreraTecnicaComponent
+    CarreraTecnicaComponent,
+    FormCarreraTecnicaComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
     FlexLayoutModule,
-    FlexModule
+    FormsModule,
+    ReactiveFormsModule
+    //AspiranteModule,
+    //AlumnoModule
   ]
 })
 export class CarreraTecnicaModule { }
+
